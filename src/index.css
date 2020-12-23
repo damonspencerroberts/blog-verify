@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  margin: 25px auto;
+  text-align: center;
+}
+.posts {
+  margin: 30px auto;
+  text-align: center;
+  border: solid 1px black;
+  position: relative;
+}
+
+.num {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 5px;
+  width: 3rem;
+  line-height: 3rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.buttons {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.send, .sendno {
+	box-shadow:inset 1px 50px 0px 50px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Impact;
+	font-size: 24px;
+	font-weight:bold;
+	padding: 12px 12px;
+	text-decoration:none;
+  text-shadow:0px 0px 0px #ced9bf;
+  margin: 5px 20px;
+}
+.send:hover, .sendno:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+.send:active, .sendno:active {
+	position:relative;
+	top:1px;
+}
+
+.send { color: blue; }
+.sendno { color: red; }
