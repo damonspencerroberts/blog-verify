@@ -51,7 +51,7 @@ class App extends Component {
     const cur = blogs.find(e => {
       return e.eachId === blogIndex;
     });
-
+    console.log(cur)
     Axios.post("/final-posts.json", cur)
     .then(res => console.log("Successfully Sent!"))
     .catch(err => alert(err));
@@ -83,6 +83,7 @@ class App extends Component {
             <h6>{e.date}</h6>
             <img src = {e.image} alt = {e.title + "img"} />
             <p>{e.content}</p>
+            <p>Is there an image? {e.isImage ? "Yes": "No"}</p>
             <div className = "buttons">
               <a className="send" onClick = {() => this.sendData(e.eachId)}>✓</a>
               <a className="sendno" onClick = {() => this.deleteData(e.eachId)}>✕</a>
